@@ -1,0 +1,50 @@
+{
+  "name": "farm-management-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "dev-watch": "concurrently \"tsc -w\" \"nodemon --experimental-modules --es-module-specifier-resolution=node dist/index.js\"",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.2",
+    "randomstring": "^1.3.0",
+    "sslcommerz-lts": "^1.1.0",
+    "stripe": "^13.4.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.1.3",
+    "@types/validator": "^13.7.17",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": "18.18.2"
+  }
+}
